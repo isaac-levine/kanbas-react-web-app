@@ -1,226 +1,241 @@
-<table width="100%">
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Account</a>
-                    </li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/index.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/Kanbas/home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom Meetings</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Assignments/index.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="#">Quizzes</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/grades.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto Video</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
+<!DOCTYPE html>
 
-                </ul>
-            </td>
+<html lang="en">
 
-            <td valign="top">
+<head>
 
-                <select>
-                    <option selected>Speed Grader</option>
-                    <option>Edit</option>
-                    <option>Duplicate</option>
-                    <option>Delete</option>
-                    <option>Move To...</option>
-                    <option>Send To...</option>
-                    <option>Copy To...</option>
-                    <option>Share to Commons</option>
-                </select>
+    <meta charset="UTF-8">
 
-                <hr />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-                <h2>Assignment Name</h2>
+    <title>Edit Assignment</title>
+</head>
 
+<body>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <ul>
+                        <li>
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Courses/index.html">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#">Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                        <li>
+                            <a href="#">Studio</a>
+                        </li>
+                        <li>
+                            <a href="#">Commons</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <ul>
+                        <li>
+                            <a href="/Kanbas/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/Assignments/index.html">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li>
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="#">Settings</a>
+                        </li>
 
-                <input value="A1 - ENV + HTML"></input>
-                <br />
-                <br />
+                    </ul>
+                </td>
 
-                <textarea>This is the assignment description</textarea>
+                <td valign="top">
 
-                <br />
-                <br />
-                <label for="points">Points</label> <br />
-                <input id="points" type="number" value="100"></input>
+                    <select>
+                        <option selected>Speed Grader</option>
+                        <option>Edit</option>
+                        <option>Duplicate</option>
+                        <option>Delete</option>
+                        <option>Move To...</option>
+                        <option>Send To...</option>
+                        <option>Copy To...</option>
+                        <option>Share to Commons</option>
+                    </select>
 
-                <br />
-                <br />
-                <label for="assignment-group">Assignment Group</label> <br />
-                <select id="assignment-group">
-                    <option selected>ASSIGNMENTS</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
+                    <hr />
 
-                <br />
-                <br />
-                <label for="display-grade-as">Display Grade as</label> <br />
-                <select id="display-grade-as">
-                    <option selected>Percentage</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-
-                <br />
-                <br />
-                <label for="submission-type">Submission Type</label> <br />
-                <select id="submission-type">
-                    <option selected>Online</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-
-                <br />
-                <br />
-                <label>Online Entry Options</label>
-                <br />
-
-                <input type="checkbox" /> Text Entry<br />
-                <input type="checkbox" /> Website URL<br />
-                <input type="checkbox" /> Media Recordings <br />
-                <input type="checkbox" /> Student Annotation <br />
-                <input type="checkbox" /> File Uploads <br />
-
-                <br />
-                <label for="submission-attemps">Submission Attemps</label> <br />
-                <select id="submission-attempts">
-                    <option selected>Unlimited</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-
-                <br />
-                <br />
-                <label for="plagiarism-review">Plagiarism Review</label> <br />
-                <select id="plagiarism-review">
-                    <option selected>None</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-
-                <br />
-                <br />
-
-                <label for="group-assignment">Group Assignment</label><br />
-                <input id="group-assignment" type="checkbox" />This is a group assignment<br />
-
-                <br />
-
-                <label for="peer-reviews">Peer Reviews</label><br />
-                <input id="peer-reviews" type="checkbox" />Require Peer Reviews<br />
-
-                <br />
-                <label>Assign</label> <br />
-                <label for="assign-to">Assign to</label> <br />
-                <input id="assign-to" type="text" value="Everyone"></input> <br />
-
-                <br />
-                <label for="due">Due</label> <br />
-                <input id="due" type="date"></input> <br />
-
-                <br />
-                <label for="available-from">Available from</label> <br />
-                <input id="available-from" type="date"></input> <br />
-
-                <br />
-                <label for="until">Until</label> <br />
-                <input id="until" type="date"></input> <br />
-
-                <br />
-                <button>
-                    <a href="index.html">Cancel</a>
-                </button>
-                <button>
-                    <a href="index.html">Save</a>
-                </button>
+                    <h2>Assignment Name</h2>
 
 
+                    <input value="A1 - ENV + HTML"></input>
+                    <br />
+                    <br />
+
+                    <textarea>This is the assignment description</textarea>
+
+                    <br />
+                    <br />
+                    <label for="points">Points</label> <br />
+                    <input id="points" type="number" value="100"></input>
+
+                    <br />
+                    <br />
+                    <label for="assignment-group">Assignment Group</label> <br />
+                    <select id="assignment-group">
+                        <option selected>ASSIGNMENTS</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <br />
+                    <br />
+                    <label for="display-grade-as">Display Grade as</label> <br />
+                    <select id="display-grade-as">
+                        <option selected>Percentage</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <br />
+                    <br />
+                    <label for="submission-type">Submission Type</label> <br />
+                    <select id="submission-type">
+                        <option selected>Online</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <br />
+                    <br />
+                    <label>Online Entry Options</label>
+                    <br />
+
+                    <input type="checkbox" /> Text Entry<br />
+                    <input type="checkbox" /> Website URL<br />
+                    <input type="checkbox" /> Media Recordings <br />
+                    <input type="checkbox" /> Student Annotation <br />
+                    <input type="checkbox" /> File Uploads <br />
+
+                    <br />
+                    <label for="submission-attemps">Submission Attemps</label> <br />
+                    <select id="submission-attempts">
+                        <option selected>Unlimited</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <br />
+                    <br />
+                    <label for="plagiarism-review">Plagiarism Review</label> <br />
+                    <select id="plagiarism-review">
+                        <option selected>None</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+
+                    <br />
+                    <br />
+
+                    <label for="group-assignment">Group Assignment</label><br />
+                    <input id="group-assignment" type="checkbox" />This is a group assignment<br />
+
+                    <br />
+
+                    <label for="peer-reviews">Peer Reviews</label><br />
+                    <input id="peer-reviews" type="checkbox" />Require Peer Reviews<br />
+
+                    <br />
+                    <label>Assign</label> <br />
+                    <label for="assign-to">Assign to</label> <br />
+                    <input id="assign-to" type="text" value="Everyone"></input> <br />
+
+                    <br />
+                    <label for="due">Due</label> <br />
+                    <input id="due" type="date"></input> <br />
+
+                    <br />
+                    <label for="available-from">Available from</label> <br />
+                    <input id="available-from" type="date"></input> <br />
+
+                    <br />
+                    <label for="until">Until</label> <br />
+                    <input id="until" type="date"></input> <br />
+
+                    <br />
+                    <button>
+                        <a href="index.html">Cancel</a>
+                    </button>
+                    <button>
+                        <a href="index.html">Save</a>
+                    </button>
 
 
 
-            </td>
-            <td valign="top">
 
-            </td>
-        </tr>
 
-    </tbody>
-</table>
+                </td>
+                <td valign="top">
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
