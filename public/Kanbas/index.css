@@ -1,0 +1,25 @@
+#kanbas-navigation-sidebar {
+    background-color: black;
+}
+
+.kanbas-icon {
+    color: red;
+    margin: 0;
+}
+
+#account-icon {
+    color: white;
+    justify-content: start;
+}
+
+#kanbas-navigation-sidebar a {
+    color: white;
+}
+
+a {
+    text-align: center;
+}
+
+.kanbas-navigation-sidebar-item {
+    margin-top: 25%;
+}
