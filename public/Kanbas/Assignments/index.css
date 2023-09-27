@@ -34,27 +34,3 @@ a {
 #account-container a {
     color: red;
 }
-
-.active {
-    border-left: 10px;
-    border-color: black;
-}
-
-.list-group-item>a {
-    color: red;
-    text-decoration: none;
-}
-
-/* TODO why is this not working to put a border on the element */
-.list-group-item .active {
-    border-left: 10px;
-    border-color: black;
-    color: black;
-}
-
-
-.active {
-    border-left: 10px;
-    border-color: black;
-    color: black;
-}
