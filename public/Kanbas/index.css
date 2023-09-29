@@ -73,6 +73,10 @@ a {
     margin-bottom: 30px;
 }
 
+#wd-course-card-grid .card>img {
+    width: 100%;
+}
+
 .top-right-button {
     margin-right: 5px;
 }
