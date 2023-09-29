@@ -117,3 +117,7 @@ a {
 #buttons-container>a {
     margin-left: 5px;
 }
+
+#grades-table {
+    margin-top: 25px;
+}

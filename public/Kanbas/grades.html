@@ -7,291 +7,283 @@
     <meta charset="UTF-8">
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Grades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Assignments</title>
 </head>
 
 <body>
 
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/account.html">Account</a>
-                        </li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/index.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a>
-                        </li>
-                        <li>
-                            <a href="#">Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#">History</a>
-                        </li>
-                        <li>
-                            <a href="#">Studio</a>
-                        </li>
-                        <li>
-                            <a href="#">Commons</a>
-                        </li>
-                        <li>
-                            <a href="#">Help</a>
-                        </li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/home.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Modules</a>
-                        </li>
-                        <li>
-                            <a href="#">Piazza</a>
-                        </li>
-                        <li>
-                            <a href="#">Zoom Meetings</a>
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Assignments/index.html">Assignments</a>
-                        </li>
-                        <li>
-                            <a href="#">Quizzes</a>
-                        </li>
-                        <li>
-                            <a href="/Kanbas/grades.html">Grades</a>
-                        </li>
-                        <li>
-                            <a href="#">People</a>
-                        </li>
-                        <li>
-                            <a href="#">Panopto Video</a>
-                        </li>
-                        <li>
-                            <a href="#">Discussions</a>
-                        </li>
-                        <li>
-                            <a href="#">Announcements</a>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                        </li>
-                        <li>
-                            <a href="#">Files</a>
-                        </li>
-                        <li>
-                            <a href="#">Rubrics</a>
-                        </li>
-                        <li>
-                            <a href="#">Outcomes</a>
-                        </li>
-                        <li>
-                            <a href="#">Collaborations</a>
-                        </li>
-                        <li>
-                            <a href="#">Syllabus</a>
-                        </li>
-                        <li>
-                            <a href="#">Settings</a>
-                        </li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <select> Gradebook
-                        <option selected>Gradebook</option>
-                        <option>Gradebook</option>
-                        <option>Gradebook</option>
-                    </select>
-                    <button>Import</button>
-                    <select> Export
-                        <option selected>Export</option>
-                        <option>Export</option>
-                        <option>Export</option>
-                    </select>
-                    <button>Configure</button>
+    <div class="container-fluid">
+        <div class="row ">
 
-                    <h3>Student Names</h3>
-                    <input type="text" placeholder="Search Students">
+            <!-- ------------- KANBAS NAVIGATION SIDEBAR COLUMN------------- -->
+            <div class="col-1 vh-100% text-center container" id="kanbas-navigation-sidebar">
 
-                    <h3>Assignment Names</h3>
-                    <input type="text" placeholder="Search Assignments">
+                <div class="kanbas-navigation-sidebar-item justify-content-center">
+                    <i class="fa-solid fa-k fa-4x" id="k-icon"></i>
+                </div>
 
-                    <br />
-                    <button>Apply Filters</button>
+                <div class="kanbas-navigation-sidebar-item justify-content-center" id="account-container">
+                    <i class="kanbas-icon fa-solid fa-user" id="account-icon"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link"
+                        href="/Kanbas/account.html">Account</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-gauge"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link"
+                        href="/Kanbas/dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-book-open"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link"
+                        href="/Kanbas/Courses/index.html">Courses</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-calendar"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Calendar</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-envelope"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Inbox</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-clock-rotate-left"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">History</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-person-chalkboard"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Studio</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-tower-cell"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Commons</a>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item">
+                    <i class="kanbas-icon row fa-solid fa-question"></i>
+                    <a class="justify-content-center text-decoration-none row stretched-link" href="#">Help</a>
+                </div>
+            </div>
+
+            <!-- ------------- REST OF THE SCREEN ------------- -->
+            <div class="container col-11">
 
 
-                    <br />
-                    <table border="1">
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A1 SETUP Out of 100</th>
-                            <th>A2 HTML Out of 100</th>
-                            <th>A3 CSS Out of 100</th>
-                            <th>A4 BOOTSTRAP Out of 100</th>
-                            <th>A5 JAVASCRIPT Out of 100</th>
-                            <th>A6 REACT Out of 100</th>
-                            <th>A7 REDUX Out of 100</th>
-                            <th>A8 NODE Out of 100</th>
-                            <th>A9 MONGO Out of 100</th>
-                        </tr>
-                        <tr>
-                            <td>Alice Wonderland</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Princess Leia</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Luke Skywalker</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Han Solo</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Lando Calresian</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Boba Fet</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Darth Vader</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                        </tr>
-                        <tr>
-                            <td>Obi-Wan Kenobi</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>R2-D2</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>C-3PO</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Yoda</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                        <tr>
-                            <td>Admiral Ackbar</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td><input align="center" type="number" min='0' max='100' placeholder="55"></td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                            <td align="center">98</td>
-                        </tr>
-                    </table>
+                <div class="row">
 
-                </td>
-            </tr>
+                    <!-- ------------- TOP BREADCRUMB ------------- -->
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">CS1223.1213.1231</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                        </ol>
+                    </nav>
 
-        </tbody>
-    </table>
+
+                    <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
+                    <div class="col-2 justify-content-start" id="account-navigation-sidebar">
+                        <ul class="list-group-flush" id="account-nav-list">
+                            <li class="list-group-item ">
+                                <a href="/Kanbas/home.html">Home</a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#">Modules</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Piazza</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Zoom Meetings</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="/Kanbas/Assignments">Assignments</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Quizzes</a>
+                            </li>
+                            <li class="list-group-item active">
+                                <a href="/Kanbas/grades.html">Grades</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">People</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Panopto Video</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Discussions</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Announcements</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Pages</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Files</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Rubrics</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Outcomes</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Collaborations</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Syllabus</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
+                    <div class="col-10 container" id="modules-content-container">
+
+                        <!-- SEARCH AND TOP-RIGHT BUTTONS -->
+                        <div class="container-fluid row">
+                            <div class="container">
+
+
+
+                            </div>
+                        </div>
+
+
+                        <!-- GRADES CONTENT -->
+                        <div class="container-fluid row" id="grades-content-container">
+
+                            <hr id="assignment-line-break" />
+
+                            <div class="container">
+
+                                <a class="top-right-button btn btn-light float-end" href="/Kanbas/account.html"
+                                    role="button">
+                                    <i class="fa-solid fa-gear"></i>
+                                </a>
+                                <a class="top-right-button btn btn-light float-end" href="/Kanbas/account.html"
+                                    role="button">
+                                    <i class="fa-solid fa-file-export"></i> Export
+                                </a>
+                                <a class="top-right-button btn btn-light float-end" href="/Kanbas/account.html"
+                                    role="button">
+                                    <i class="fa-solid fa-file-import"></i> Import
+                                </a>
+
+
+
+
+                                <div class="container row">
+                                    <div class="col-6">
+                                        <label for="formGroupExampleInput2"><b>Student Names</b></label>
+                                        <input type="text" class="form-control" placeholder="Search Students"
+                                            id="formGroupExampleInput2">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="formGroupExampleInput2"><b>Assignment Names</b></label>
+                                        <input type="text" class="form-control" placeholder="Search Assignments"
+                                            id="formGroupExampleInput2">
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <a class="top-right-button btn btn-light float-start" href="/Kanbas/account.html"
+                                        role="button">
+                                        <i class="fa fa-filter"></i>Apply Filters
+                                    </a>
+                                </div>
+
+                                <div class="container" id="grades-table-container">
+                                    <table class="table table-striped" id="grades-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Student Name</th>
+                                                <th scope="col">A1 SETUP</th>
+                                                <th scope="col">A2 HTML</th>
+                                                <th scope="col">A3 CSS</th>
+                                                <th scope="col">A4 BOOTSTRAP</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">First Last</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">First Last</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td><input type="number" class="form-control" id="inputName" min="0"
+                                                        max="100" style="width: 70px;"></td>
+                                                <td>100%</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">First Last</td>
+                                                <td><input type="number" class="form-control" min="0" max="100"
+                                                        id="inputName" style="width: 70px;"></td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">First Last</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+
+                                                <td>100%</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+
 </body>

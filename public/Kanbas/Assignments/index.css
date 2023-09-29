@@ -13,3 +13,31 @@
     margin-left: 5px;
     font-weight: bold;
 }
+
+#bottom-labels>input {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 25px;
+}
+
+#submission-type-container {
+    border: 1px solid black;
+}
+
+
+#submission-type-select {
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#assign-container>* {
+    margin-bottom: 20px;
+}
+
+.bottom-button {
+    float: end;
+    width: 150px;
+}
