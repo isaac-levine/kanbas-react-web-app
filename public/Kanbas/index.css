@@ -1,6 +1,7 @@
 #kanbas-navigation-sidebar {
     background-color: black;
     padding: 0;
+    border-radius: 0;
 }
 
 .kanbas-icon {
