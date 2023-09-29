@@ -21,7 +21,8 @@
         <div class="row ">
 
             <!-- ------------- KANBAS NAVIGATION SIDEBAR COLUMN------------- -->
-            <div class="col-1 vh-100% text-center container list-group" id="kanbas-navigation-sidebar">
+            <div class="col-1 vh-100% text-center container list-group d-none d-md-none d-lg-block"
+                id="kanbas-navigation-sidebar">
 
                 <div class="kanbas-navigation-sidebar-item justify-content-center list-group-item">
                     <a href="/Kanbas/home.html"> <i class="fa-solid fa-k fa-4x" id="k-icon"></i> </a>
@@ -81,19 +82,26 @@
             <div class="container col-11">
 
 
-                <div class="row">
+                <div class="row container">
 
                     <!-- ------------- TOP BREADCRUMB ------------- -->
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Home</li>
-                        </ol>
-                    </nav>
+                    <div class="container">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb float-start">
+                                <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            </ol>
+                        </nav>
+                        <button class="btn btn-light float-end"><i class="fa-solid fa-glasses"></i> Student
+                            View</button>
+                    </div>
+
+                    <hr />
 
 
                     <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
-                    <div class="col-2 justify-content-start" id="account-navigation-sidebar">
+                    <div class="col-2 justify-content-start d-none d-md-none d-lg-block"
+                        id="account-navigation-sidebar">
                         <ul class="list-group-flush" id="account-nav-list">
                             <li class="list-group-item active">
                                 <a href="home.html">Home</a>
@@ -153,15 +161,17 @@
                     </div>
 
                     <!-- ------------- MODULES CONTENT CONTAINER ------------- -->
-                    <div class="col-10 container" id="modules-content-container">
-
-
-
+                    <div class="col-8 container" id="modules-content-container">
 
                         <div class="container-fluid row">
                             <div class="container" id="buttons-container">
+
+                                <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+
                                 <a class="top-right-button btn btn-danger float-end" href="" role="button">
-                                    + Module
+                                    <i class="fa-solid fa-plus"></i> Module
                                 </a>
                                 <div class="top-right-button dropdown float-end">
                                     <button class="btn btn-light dropdown-toggle" type="button"
@@ -181,6 +191,9 @@
                                     Collapse All
                                 </a>
                             </div>
+
+
+
                         </div>
 
 
@@ -288,6 +301,37 @@
 
 
                     </div>
+
+                    <!-- ------------- COURSE STATUS COLUMN ------------- -->
+                    <div class="col-2 container d-none d-lg-none d-xl-block">
+                        <p>Course Status</p>
+
+                        <button class="btn btn-sm btn-light">Unpublish</button>
+                        <button class="btn btn-sm btn-light">Published</button>
+
+
+                        <button class="btn btn-sm btn-light">Import Existing Content</button>
+                        <button class="btn btn-sm btn-light">Import From Commons</button>
+                        <button class="btn btn-sm btn-light">Choose Home Page</button>
+                        <button class="btn btn-sm btn-light">View Course Stream</button>
+                        <button class="btn btn-sm btn-light">New Announcement</button>
+                        <button class="btn btn-sm btn-light">New Analytics</button>
+                        <button class="btn btn-sm btn-light">View Course Notifications</button>
+
+                        <b>To Do</b>
+                        <hr />
+                        <p>Something</p>
+
+                        <b>Coming Up</b>
+                        <hr />
+                        <p>Something</p>
+
+
+
+
+                    </div>
+
+
 
                 </div>
 
