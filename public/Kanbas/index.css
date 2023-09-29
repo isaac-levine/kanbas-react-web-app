@@ -7,55 +7,40 @@
     color: red;
 }
 
-#account-icon {
-    color: gray;
-    justify-content: start;
-}
 
-#kanbas-navigation-sidebar a {
-    color: white;
+#account-icon {
+    color: lightgray;
+    justify-content: start;
 }
 
 a {
     text-align: center;
 }
 
-.kanbas-navigation-sidebar-item {
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 10%;
-    width: 100%;
-    position: relative;
-}
-
-#account-container {
-    background-color: white;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#account-container a {
-    color: red;
-}
 
 .list-group-item>a {
     color: red;
     text-decoration: none;
 }
 
+.kanbas-navigation-sidebar-item>a {
+    color: white;
+}
+
+
+#kanbas-navigation-sidebar>.active>a {
+    color: red;
+}
+
 .list-group-item {
     margin-top: 16px;
-    /* background-color: lightcyan; */
+
 }
 
 #account-nav-list>.active {
     border-left: 2px solid black;
     margin-top: 16px;
     padding-left: 5px;
-}
-
-.active a {
-    color: black;
 }
 
 .container {
@@ -120,4 +105,21 @@ a {
 
 #grades-table {
     margin-top: 25px;
+}
+
+.list-group {
+    --bs-list-group-bg: ;
+}
+
+#kanbas-navigation-sidebar>.active {
+    background-color: white;
+    border: 0;
+}
+
+#kanbas-navigation-sidebar>.active>i {
+    /* color: red; */
+}
+
+#kanbas-navigation-sidebar>.list-group-item {
+    margin-bottom: 0px;
 }
