@@ -1,36 +1,15 @@
-#kanbas-navigation-sidebar {
-    background-color: black;
+.assignment {
+    border-left-color: green;
+    border-left-width: 4px;
 }
 
-.kanbas-icon {
-    color: red;
+.assignment>a {
+    color: black;
+    font-weight: bold;
 }
 
-#account-icon {
-    color: gray;
-    justify-content: start;
-}
-
-#kanbas-navigation-sidebar a {
-    color: white;
-}
-
-a {
-    text-align: center;
-}
-
-.kanbas-navigation-sidebar-item {
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 10%;
-    width: 100%;
-    position: relative;
-}
-
-#account-container {
-    background-color: white;
-}
-
-#account-container a {
-    color: red;
+#published {
+    color: green;
+    margin-left: 5px;
+    font-weight: bold;
 }

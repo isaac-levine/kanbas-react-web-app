@@ -1,5 +1,6 @@
 #kanbas-navigation-sidebar {
     background-color: black;
+    padding: 0;
 }
 
 .kanbas-icon {
@@ -29,15 +30,12 @@ a {
 
 #account-container {
     background-color: white;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #account-container a {
     color: red;
-}
-
-.active {
-    border-left: 10px;
-    border-color: black;
 }
 
 .list-group-item>a {
@@ -45,16 +43,77 @@ a {
     text-decoration: none;
 }
 
-/* TODO why is this not working to put a border on the element */
-.list-group-item .active {
-    border-left: 10px;
-    border-color: black;
+.list-group-item {
+    margin-top: 16px;
+    /* background-color: lightcyan; */
+}
+
+#account-nav-list>.active {
+    border-left: 2px solid black;
+    margin-top: 16px;
+    padding-left: 5px;
+}
+
+.active a {
     color: black;
 }
 
+.container {
+    padding-top: 10px;
+}
 
-.active {
-    border-left: 10px;
-    border-color: black;
-    color: black;
+#pencil-icon {
+    margin-right: 3px;
+}
+
+#account-nav-list {
+    padding-left: 0;
+}
+
+#k-icon {
+    color: red;
+}
+
+#profile-screen {
+    padding-left: 50px;
+}
+
+#remove-url-icon {
+    color: red;
+}
+
+#wd-course-card-grid .card {
+    width: 255px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.top-right-button {
+    margin-right: 5px;
+}
+
+.module li {
+    margin: 0;
+}
+
+.module>.content {
+    padding-left: 50px;
+}
+
+#assignment-search {
+    width: 300px;
+}
+
+#assignment-line-break {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.module {
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+#buttons-container>a {
+    margin-left: 5px;
 }

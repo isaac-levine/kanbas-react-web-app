@@ -11,76 +11,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Account</title>
 </head>
 
 <body>
 
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="row">
 
-            <!-- ------------- KANBAS NAVIGATION SIDEBAR ------------- -->
+            <!-- ------------- KANBAS NAVIGATION SIDEBAR COLUMN------------- -->
             <div class="col-1 vh-100% text-center container" id="kanbas-navigation-sidebar">
 
-                <!-- TODO: make these containers full width of the nav bar -->
-                <div class="container kanbas-navigation-sidebar-item justify-content-center" id="account-container">
+                <div class="kanbas-navigation-sidebar-item justify-content-center">
+                    <i class="fa-solid fa-k fa-4x" id="k-icon"></i>
+                </div>
+
+                <div class="kanbas-navigation-sidebar-item justify-content-center" id="account-container">
                     <i class="kanbas-icon fa-solid fa-user" id="account-icon"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link"
                         href="/Kanbas/account.html">Account</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-gauge"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Dashboard</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-book-open"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link"
                         href="/Kanbas/Courses/index.html">Courses</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-calendar"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Calendar</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-envelope"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Inbox</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-clock-rotate-left"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">History</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-person-chalkboard"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Studio</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-tower-cell"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Commons</a>
                 </div>
 
-                <div class="container kanbas-navigation-sidebar-item">
+                <div class="kanbas-navigation-sidebar-item">
                     <i class="kanbas-icon row fa-solid fa-question"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Help</a>
                 </div>
             </div>
-            <!-- ------------- ACCOUNT NAVIGATION ------------- -->
-            <div class="col-2 vh-100">
+            <!-- ------------- ACCOUNT NAVIGATION SIDEBAR COLUMN------------- -->
+            <div class="col-1 vh-100 justify-content-start" id="account-navigation-sidebar">
 
-                <ul class="list-group-flush">
 
-                    <li class="list-group-item active">
+                <ul class="list-group-flush" id="account-nav-list">
+
+                    <li class="list-group-item ">
                         <a href="#">Notifications</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item active">
                         <a href="/Kanbas/Profile/index.html">Profile</a>
                     </li>
                     <li class="list-group-item">
@@ -106,9 +110,43 @@
                     </li>
                 </ul>
             </div>
-            <!-- ------------- PROFILE SCREEN ------------- -->
-            <div class="col-9">
-                "Profile screen described later"
+            <!-- ------------- PROFILE SCREEN COLUMN ------------- -->
+            <div class="col-8 vh-100 container" id="profile-screen">
+
+                <i class="fa fa-user fa-10x" aria-hidden="true" id="user-icon"></i>
+                <h1>Isaac Levine</h1>
+
+                <h4>Contact</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorem accusantium impedit esse
+                    sapiente, sequi alias natus cumque consectetur eaque. Architecto sapiente suscipit odit molestiae
+                    temporibus ex. Amet, at omnis!</p>
+
+                <h4>Biography</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aspernatur harum qui repellat
+                    earum similique voluptatibus expedita voluptatem blanditiis? Ipsa veritatis voluptatibus porro,
+                    nulla numquam omnis fugiat itaque delectus pariatur.
+                </p>
+
+                <h4>Links</h4>
+                <ul class="list-group-flush">
+                    <li class="list-group-item">
+                        <i class="fa-solid fa-link"></i>
+                        <a
+                            href="https://www.youtube.com/watch?v=BumwDcj5Y8k&feature=youtu.be&ab_channel=WebDevTV">Youtube</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <!-- EDIT PROFILE COLUMN   -->
+            <div class="col-2 vh-100 container">
+
+                <a class="btn btn-light float-end" href="/Kanbas/Profile/edit.html" role="button">
+                    <i class="fa-solid fa-pencil" id="pencil-icon"></i>
+                    Edit Profile
+                </a>
             </div>
 
         </div>
