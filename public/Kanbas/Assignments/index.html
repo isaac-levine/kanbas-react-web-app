@@ -41,10 +41,10 @@
                         href="/Kanbas/dashboard.html">Dashboard</a>
                 </div>
 
-                <div class="kanbas-navigation-sidebar-item list-group-item">
+                <div class="kanbas-navigation-sidebar-item list-group-item active">
                     <i class="kanbas-icon row fa-solid fa-book-open"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link"
-                        href="/Kanbas/dashboard.html">Courses</a>
+                        href="/Kanbas/Courses/index.html">Courses</a>
                 </div>
 
                 <div class="kanbas-navigation-sidebar-item list-group-item">
@@ -79,139 +79,138 @@
             </div>
 
             <!-- ------------- REST OF THE SCREEN ------------- -->
-            <div class="container col-11">
+            <div class="container row col-11" id="rest-of-screen-container">
 
 
-                <div class="row container">
 
-                    <!-- ------------- TOP BREADCRUMB ------------- -->
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
-                        </ol>
-                    </nav>
+                <!-- ------------- TOP BREADCRUMB ------------- -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
 
-                    <hr />
+                <hr />
 
-                    <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
-                    <div class="col-2 justify-content-start" id="account-navigation-sidebar">
-                        <ul class="list-group-flush" id="account-nav-list">
-                            <li class="list-group-item ">
-                                <a href="/Kanbas/home.html">Home</a>
-                            </li>
-                            <li class="list-group-item ">
-                                <a href="#">Modules</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Piazza</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Zoom Meetings</a>
-                            </li>
-                            <li class="list-group-item active">
-                                <a href="/Kanbas/Assignments">Assignments</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Quizzes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/Kanbas/grades.html">Grades</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">People</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Panopto Video</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Discussions</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Announcements</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Files</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Rubrics</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Outcomes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Collaborations</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Syllabus</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
-                    <div class="col-10 container" id="modules-content-container">
-
-                        <!-- SEARCH AND TOP-RIGHT BUTTONS -->
-                        <div class="container-fluid row">
-                            <div class="container">
-                                <div class="form-floating float-start" id="assignment-search">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Search for an Assignment</label>
-                                </div>
-                                <a class="top-right-button btn btn-danger float-end" href="" role="button">
-                                    <i class="fa-solid fa-plus"></i> Assignment
-                                </a>
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    <i class="fa-solid fa-plus"></i> Group
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <!-- ASSIGNMENT CONTENT -->
-                        <div class="container-fluid row">
-
-                            <hr id="assignment-line-break" />
-
-                            <div class="row">
-                                <ul class="module list-group">
-                                    <li class="list-group-item list-group-item-secondary"><b>Assignments</b></li>
-
-                                    <li class="list-group-item assignment">
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                        <a href="edit.html">A1 SETUP</a>
-                                        <p>Sub text / description</p>
-                                    </li>
-
-                                    <li class="list-group-item assignment">
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                        <a href="edit.html">A2 HTML</a>
-                                        <p>Sub text / description</p>
-                                    </li>
-
-                                    <li class="list-group-item assignment">
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                        <a href="edit.html">A3 CSS</a>
-                                        <p>Sub text / description</p>
-                                    </li>
-
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
+                <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
+                <div class="col-2 justify-content-start" id="account-navigation-sidebar">
+                    <ul class="list-group-flush" id="account-nav-list">
+                        <li class="list-group-item ">
+                            <a href="/Kanbas/home.html">Home</a>
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#">Modules</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="/Kanbas/Assignments">Assignments</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">People</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
+                <div class="col-10 container" id="modules-content-container">
+
+                    <!-- SEARCH AND TOP-RIGHT BUTTONS -->
+                    <div class="container-fluid row">
+                        <div class="container">
+                            <div class="form-floating float-start" id="assignment-search">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Search for an Assignment</label>
+                            </div>
+                            <a class="top-right-button btn btn-danger float-end" href="" role="button">
+                                <i class="fa-solid fa-plus"></i> Assignment
+                            </a>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-plus"></i> Group
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- ASSIGNMENT CONTENT -->
+                    <div class="container-fluid row">
+
+                        <hr id="assignment-line-break" />
+
+                        <div class="row">
+                            <ul class="module list-group">
+                                <li class="list-group-item list-group-item-secondary"><b>Assignments</b></li>
+
+                                <li class="list-group-item assignment">
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                    <a href="edit.html">A1 SETUP</a>
+                                    <p>Sub text / description</p>
+                                </li>
+
+                                <li class="list-group-item assignment">
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                    <a href="edit.html">A2 HTML</a>
+                                    <p>Sub text / description</p>
+                                </li>
+
+                                <li class="list-group-item assignment">
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                    <a href="edit.html">A3 CSS</a>
+                                    <p>Sub text / description</p>
+                                </li>
+
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
 
 
 

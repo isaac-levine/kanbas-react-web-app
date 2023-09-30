@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <title>Assignments</title>
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Grades</title>
 </head>
 
 <body>
@@ -41,10 +41,10 @@
                         href="/Kanbas/dashboard.html">Dashboard</a>
                 </div>
 
-                <div class="kanbas-navigation-sidebar-item list-group-item">
+                <div class="kanbas-navigation-sidebar-item list-group-item active">
                     <i class="kanbas-icon row fa-solid fa-book-open"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link"
-                        href="/Kanbas/dashboard.html">Courses</a>
+                        href="/Kanbas/Courses/index.html">Courses</a>
                 </div>
 
                 <div class="kanbas-navigation-sidebar-item list-group-item">
@@ -79,197 +79,187 @@
             </div>
 
             <!-- ------------- REST OF THE SCREEN ------------- -->
-            <div class="container col-11">
+            <div class="container row col-11" id="rest-of-screen-container">
+
+                <!-- ------------- TOP BREADCRUMB ------------- -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                </nav>
 
 
-                <div class="row container">
-
-                    <!-- ------------- TOP BREADCRUMB ------------- -->
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Grades</li>
-                        </ol>
-                    </nav>
-
-
-                    <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
-                    <div class="col-2 justify-content-start" id="account-navigation-sidebar">
-                        <ul class="list-group-flush" id="account-nav-list">
-                            <li class="list-group-item ">
-                                <a href="/Kanbas/home.html">Home</a>
-                            </li>
-                            <li class="list-group-item ">
-                                <a href="#">Modules</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Piazza</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Zoom Meetings</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/Kanbas/Assignments">Assignments</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Quizzes</a>
-                            </li>
-                            <li class="list-group-item active">
-                                <a href="/Kanbas/grades.html">Grades</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">People</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Panopto Video</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Discussions</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Announcements</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Files</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Rubrics</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Outcomes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Collaborations</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Syllabus</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
-                    <div class="col-10 container" id="modules-content-container">
-
-                        <!-- SEARCH AND TOP-RIGHT BUTTONS -->
-                        <div class="container-fluid row">
-                            <div class="container">
-
-
-
-                            </div>
-                        </div>
-
-
-                        <!-- GRADES CONTENT -->
-                        <div class="container-fluid row" id="grades-content-container">
-
-                            <hr id="assignment-line-break" />
-
-                            <div class="container">
-
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    <i class="fa-solid fa-gear"></i>
-                                </a>
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    <i class="fa-solid fa-file-export"></i> Export
-                                </a>
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    <i class="fa-solid fa-file-import"></i> Import
-                                </a>
-
-
-
-
-                                <div class="container row">
-                                    <div class="col-6">
-                                        <label for="formGroupExampleInput2"><b>Student Names</b></label>
-                                        <input type="text" class="form-control" placeholder="Search Students"
-                                            id="formGroupExampleInput2">
-                                    </div>
-
-                                    <div class="col-6">
-                                        <label for="formGroupExampleInput2"><b>Assignment Names</b></label>
-                                        <input type="text" class="form-control" placeholder="Search Assignments"
-                                            id="formGroupExampleInput2">
-                                    </div>
-                                </div>
-
-                                <div class="container">
-                                    <a class="top-right-button btn btn-light float-start" href="/Kanbas/account.html"
-                                        role="button">
-                                        <i class="fa fa-filter"></i>Apply Filters
-                                    </a>
-                                </div>
-
-                                <div class="container" id="grades-table-container">
-                                    <table class="table table-striped" id="grades-table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Student Name</th>
-                                                <th scope="col">A1 SETUP</th>
-                                                <th scope="col">A2 HTML</th>
-                                                <th scope="col">A3 CSS</th>
-                                                <th scope="col">A4 BOOTSTRAP</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="row">First Last</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">First Last</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                                <td><input type="number" class="form-control" id="inputName" min="0"
-                                                        max="100" style="width: 70px;"></td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">First Last</td>
-                                                <td><input type="number" class="form-control" min="0" max="100"
-                                                        id="inputName" style="width: 70px;"></td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td scope="row">First Last</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-                                                <td>100%</td>
-
-                                                <td>100%</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-
-
-                            </div>
-
-
-
-
-
-
-
-                        </div>
-
-
-                    </div>
+                <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
+                <div class="col-2 justify-content-start" id="account-navigation-sidebar">
+                    <ul class="list-group-flush" id="account-nav-list">
+                        <li class="list-group-item ">
+                            <a href="/Kanbas/home.html">Home</a>
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#">Modules</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/Assignments">Assignments</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">People</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
                 </div>
+
+                <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
+                <div class="col-10 container" id="modules-content-container">
+
+                    <!-- SEARCH AND TOP-RIGHT BUTTONS -->
+                    <div class="container-fluid row">
+                        <div class="container">
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- GRADES CONTENT -->
+                    <div class="container-fluid row" id="grades-content-container">
+
+                        <hr id="assignment-line-break" />
+
+                        <div class="container">
+
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-file-export"></i> Export
+                            </a>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-file-import"></i> Import
+                            </a>
+
+
+
+
+                            <div class="container row">
+                                <div class="col-6">
+                                    <label for="formGroupExampleInput2"><b>Student Names</b></label>
+                                    <input type="text" class="form-control" placeholder="Search Students"
+                                        id="formGroupExampleInput2">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="formGroupExampleInput2"><b>Assignment Names</b></label>
+                                    <input type="text" class="form-control" placeholder="Search Assignments"
+                                        id="formGroupExampleInput2">
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <a class="top-right-button btn btn-light float-start" href="/Kanbas/account.html"
+                                    role="button">
+                                    <i class="fa fa-filter"></i>Apply Filters
+                                </a>
+                            </div>
+
+                            <div class="container" id="grades-table-container">
+                                <table class="table table-striped" id="grades-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Student Name</th>
+                                            <th scope="col">A1 SETUP</th>
+                                            <th scope="col">A2 HTML</th>
+                                            <th scope="col">A3 CSS</th>
+                                            <th scope="col">A4 BOOTSTRAP</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">First Last</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">First Last</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                            <td><input type="number" class="form-control" id="inputName" min="0"
+                                                    max="100" style="width: 70px;"></td>
+                                            <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">First Last</td>
+                                            <td><input type="number" class="form-control" min="0" max="100"
+                                                    id="inputName" style="width: 70px;"></td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">First Last</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+                                            <td>100%</td>
+
+                                            <td>100%</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
 
 
 
@@ -285,3 +275,5 @@
 
 
 </body>
+
+</html>

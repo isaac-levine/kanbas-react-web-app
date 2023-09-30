@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" />
+
+
+
     <title>Home</title>
 </head>
 
@@ -21,7 +27,8 @@
         <div class="row ">
 
             <!-- ------------- KANBAS NAVIGATION SIDEBAR COLUMN------------- -->
-            <div class="col-1 vh-100% text-center container list-group" id="kanbas-navigation-sidebar">
+            <div class="col-1 vh-100% text-center container list-group d-none d-md-none d-lg-block"
+                id="kanbas-navigation-sidebar">
 
                 <div class="kanbas-navigation-sidebar-item justify-content-center list-group-item">
                     <a href="/Kanbas/home.html"> <i class="fa-solid fa-k fa-4x" id="k-icon"></i> </a>
@@ -78,279 +85,247 @@
             </div>
 
             <!-- ------------- REST OF THE SCREEN ------------- -->
-            <div class="container col-11">
-
-
-                <div class="row container">
-
-                    <!-- ------------- TOP BREADCRUMB ------------- -->
-                    <div class="container">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb float-start">
-                                <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Home</li>
-                            </ol>
-                        </nav>
-                        <button class="btn btn-light float-end"><i class="fa-solid fa-glasses"></i> Student
-                            View</button>
-                    </div>
-
-                    <hr />
-
-
-                    <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
-                    <div class="col-2 justify-content-start d-none d-md-none d-lg-block"
-                        id="account-navigation-sidebar">
-                        <ul class="list-group-flush" id="account-nav-list">
-                            <li class="list-group-item active">
-                                <a href="home.html">Home</a>
-                            </li>
-                            <li class="list-group-item ">
-                                <a href="#">Modules</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Piazza</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Zoom Meetings</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/Kanbas/Assignments/index.html">Assignments</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Quizzes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/Kanbas/grades.html">Grades</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">People</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Panopto Video</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Discussions</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Announcements</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Files</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Rubrics</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Outcomes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Collaborations</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Syllabus</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- ------------- MODULES CONTENT CONTAINER ------------- -->
-                    <div class="col-8 container" id="modules-content-container">
-
-                        <div class="container-fluid row">
-                            <div class="container" id="buttons-container">
-
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
-
-                                <a class="top-right-button btn btn-danger float-end" href="" role="button">
-                                    <i class="fa-solid fa-plus"></i> Module
-                                </a>
-                                <div class="top-right-button dropdown float-end">
-                                    <button class="btn btn-light dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    View Progress
-                                </a>
-                                <a class="top-right-button btn btn-light float-end" href="" role="button">
-                                    Collapse All
-                                </a>
-                            </div>
-
-
-
-                        </div>
-
-
-
-                        <div class="container-fluid row">
-
-                            <hr id="assignment-line-break" />
-
-                            <div class="row">
-                                <ul class="module list-group">
-                                    <li class="list-group-item list-group-item-secondary">WEEK 0 - INTRO</li>
-                                    <li class="list-group-item">LEARNING OBJECTIVES
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item">READING
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item">SLIDES
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <ul class="module list-group">
-                                    <li class="list-group-item list-group-item-secondary">WEEK 0 - INTRO</li>
-                                    <li class="list-group-item">LEARNING OBJECTIVES
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item">READING
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">Content
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item">SLIDES
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                    <li class="list-group-item content">
-                                        <a href="#">Link</a>
-                                        <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-
-                    </div>
-
-                    <!-- ------------- COURSE STATUS COLUMN ------------- -->
-                    <div class="col-2 container d-none d-lg-none d-xl-block">
-                        <p>Course Status</p>
-
-                        <button class="btn btn-sm btn-light">Unpublish</button>
-                        <button class="btn btn-sm btn-light">Published</button>
-
-
-                        <button class="btn btn-sm btn-light">Import Existing Content</button>
-                        <button class="btn btn-sm btn-light">Import From Commons</button>
-                        <button class="btn btn-sm btn-light">Choose Home Page</button>
-                        <button class="btn btn-sm btn-light">View Course Stream</button>
-                        <button class="btn btn-sm btn-light">New Announcement</button>
-                        <button class="btn btn-sm btn-light">New Analytics</button>
-                        <button class="btn btn-sm btn-light">View Course Notifications</button>
-
-                        <b>To Do</b>
-                        <hr />
-                        <p>Something</p>
-
-                        <b>Coming Up</b>
-                        <hr />
-                        <p>Something</p>
-
-
-
-
-                    </div>
-
-
-
+            <div class="container row col-11" id="rest-of-screen-container">
+                <!-- ------------- TOP BREADCRUMB ------------- -->
+                <div class="container">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb float-start">
+                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </nav>
+                    <button class="btn btn-light float-end"><i class="fa-solid fa-glasses"></i> Student
+                        View</button>
                 </div>
 
+                <hr />
+
+
+                <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
+                <div class="col-2 justify-content-start d-none d-md-none d-lg-block" id="account-navigation-sidebar">
+                    <ul class="list-group-flush" id="account-nav-list">
+                        <li class="list-group-item active">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#">Modules</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/Assignments/index.html">Assignments</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">People</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ------------- MODULES CONTENT CONTAINER ------------- -->
+                <div class="col-8 container" id="modules-content-container">
+
+                    <div class="container-fluid row">
+                        <div class="container" id="buttons-container">
+
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+
+                            <a class="top-right-button btn btn-danger float-end" href="" role="button">
+                                <i class="fa-solid fa-plus"></i> Module
+                            </a>
+                            <div class="top-right-button dropdown float-end">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                View Progress
+                            </a>
+                            <a class="top-right-button btn btn-light float-end" href="" role="button">
+                                Collapse All
+                            </a>
+                        </div>
 
 
 
+                    </div>
 
 
 
+                    <div class="container-fluid row">
+
+                        <hr id="assignment-line-break" />
+
+                        <div class="row">
+                            <ul class="module list-group">
+                                <li class="list-group-item list-group-item-secondary">WEEK 0 - INTRO</li>
+                                <li class="list-group-item">LEARNING OBJECTIVES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item">READING
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item">SLIDES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="module list-group">
+                                <li class="list-group-item list-group-item-secondary">WEEK 0 - INTRO</li>
+                                <li class="list-group-item">LEARNING OBJECTIVES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item">READING
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">Content
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item">SLIDES
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                                <li class="list-group-item content">
+                                    <a href="#">Link</a>
+                                    <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ------------- COURSE STATUS COLUMN ------------- -->
+                <div class="col-2  d-none d-lg-none d-xl-block row" id="course-status-column">
+                    <p>Course Status</p>
+
+                    <div class="container row">
+                        <button class="col-6 btn btn-sm btn-light float-start">Unpublish</button>
+                        <button class="col-6 btn btn-sm btn-light float-end">Published</button>
+
+                    </div>
 
 
+                    <button class="btn btn-sm btn-light">Import Existing Content</button>
+                    <button class="btn btn-sm btn-light">Import From Commons</button>
+                    <button class="btn btn-sm btn-light">Choose Home Page</button>
+                    <button class="btn btn-sm btn-light">View Course Stream</button>
+                    <button class="btn btn-sm btn-light">New Announcement</button>
+                    <button class="btn btn-sm btn-light">New Analytics</button>
+                    <button class="btn btn-sm btn-light">View Course Notifications</button>
+
+                    <b>To Do</b>
+                    <hr />
+                    <p>Something</p>
+
+                    <b>Coming Up</b>
+                    <hr />
+                    <p>Something</p>
+                </div>
             </div>
-
-
         </div>
-
-
-
     </div>
     </div>
-
-
 </body>
+
+</html>

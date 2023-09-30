@@ -41,10 +41,10 @@
                         href="/Kanbas/dashboard.html">Dashboard</a>
                 </div>
 
-                <div class="kanbas-navigation-sidebar-item list-group-item">
+                <div class="kanbas-navigation-sidebar-item list-group-item active">
                     <i class="kanbas-icon row fa-solid fa-book-open"></i>
                     <a class="justify-content-center text-decoration-none row stretched-link"
-                        href="/Kanbas/dashboard.html">Courses</a>
+                        href="/Kanbas/Courses/index.html">Courses</a>
                 </div>
 
                 <div class="kanbas-navigation-sidebar-item list-group-item">
@@ -79,268 +79,262 @@
             </div>
 
             <!-- ------------- REST OF THE SCREEN ------------- -->
-            <div class="container col-11">
+            <div class="container row col-11" id="rest-of-screen-container">
+
+                <!-- ------------- TOP BREADCRUMB ------------- -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+
+                <hr />
 
 
-                <div class="row container">
+                <!-- TOOD fix spillover from this menu (all pages) -->
+                <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
+                <div class="col-2 justify-content-start" id="account-navigation-sidebar">
+                    <ul class="list-group-flush" id="account-nav-list">
+                        <li class="list-group-item ">
+                            <a href="/Kanbas/home.html">Home</a>
+                        </li>
+                        <li class="list-group-item ">
+                            <a href="#">Modules</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="/Kanbas/Assignments">Assignments</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/Kanbas/grades.html">Grades</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">People</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Pages</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <!-- ------------- TOP BREADCRUMB ------------- -->
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
-                        </ol>
-                    </nav>
+                <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
+                <div class="col-10 container-fluid" id="modules-content-container">
 
-                    <hr />
-
-
-                    <!-- TOOD fix spillover from this menu (all pages) -->
-                    <!-- ------------- HOME NAVIGATION SIDEBAR COLUMN------------- -->
-                    <div class="col-2 justify-content-start" id="account-navigation-sidebar">
-                        <ul class="list-group-flush" id="account-nav-list">
-                            <li class="list-group-item ">
-                                <a href="/Kanbas/home.html">Home</a>
-                            </li>
-                            <li class="list-group-item ">
-                                <a href="#">Modules</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Piazza</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Zoom Meetings</a>
-                            </li>
-                            <li class="list-group-item active">
-                                <a href="/Kanbas/Assignments">Assignments</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Quizzes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/Kanbas/grades.html">Grades</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">People</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Panopto Video</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Discussions</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Announcements</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Pages</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Files</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Rubrics</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Outcomes</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Collaborations</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Syllabus</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#">Settings</a>
-                            </li>
-                        </ul>
+                    <!-- SEARCH AND TOP-RIGHT BUTTONS -->
+                    <div class="container row">
+                        <div class="container">
+                            <p class="float-end" id="published">Published</p>
+                            <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
+                        </div>
                     </div>
 
-                    <!-- ------------- ASSIGNMENTS CONTENT CONTAINER ------------- -->
-                    <div class="col-10 container-fluid" id="modules-content-container">
 
-                        <!-- SEARCH AND TOP-RIGHT BUTTONS -->
-                        <div class="container row">
-                            <div class="container">
-                                <p class="float-end" id="published">Published</p>
-                                <i class="float-end fa-solid fa-circle-check" style="color: #83d025;"></i>
-                            </div>
+                    <!-- ASSIGNMENT CONTENT -->
+                    <div class="container row">
+
+                        <hr id="assignment-line-break" />
+
+                        <!-- TODO change IDS below -->
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Assignment Name</label>
+                            <input class="form-control" id="exampleFormControlInput1">
                         </div>
 
+                        <div>
+                            <textarea class="form-control" id="textarea" rows="3"
+                                placeholder="This assignment describes how to blah blah blah"></textarea>
+                        </div>
 
-                        <!-- ASSIGNMENT CONTENT -->
-                        <div class="container row">
+                        <div class="container row" id="bottom-section">
 
-                            <hr id="assignment-line-break" />
-
-                            <!-- TODO change IDS below -->
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Assignment Name</label>
-                                <input class="form-control" id="exampleFormControlInput1">
-                            </div>
-
-                            <div>
-                                <textarea class="form-control" id="textarea" rows="3"
-                                    placeholder="This assignment describes how to blah blah blah"></textarea>
-                            </div>
-
-                            <div class="container row" id="bottom-section">
-
-                                <form id="bottom-input-form">
-                                    <div class="form-group row">
-                                        <label for="inputName" class="col-sm-2 col-form-label text-end">Points</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="inputName">
-                                        </div>
+                            <form id="bottom-input-form">
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-sm-2 col-form-label text-end">Points</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" id="inputName">
                                     </div>
+                                </div>
 
-                                    <div class="form-group row">
-                                        <label for="assignmentsSelect"
-                                            class="col-sm-2 col-form-label text-end">Assignment
-                                            Group</label>
-                                        <div class="col-sm-10">
-                                            <select class="form-select" aria-label="Default select example"
-                                                id="assignmentsSelect">
-                                                <option selected>ASSIGNMENTS</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                <div class="form-group row">
+                                    <label for="assignmentsSelect" class="col-sm-2 col-form-label text-end">Assignment
+                                        Group</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="assignmentsSelect">
+                                            <option selected>ASSIGNMENTS</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
+                                </div>
 
-                                    <div class="form-group row">
-                                        <label for="displayGradeSelect" class="col-sm-2 col-form-label text-end">Display
-                                            Grade
-                                            as</label>
-                                        <div class="col-sm-10">
-                                            <select class="form-select" aria-label="Default select example"
-                                                id="assignmentsSelect" id="displayGradeSelect">
-                                                <option selected>Percentage</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                <div class="form-group row">
+                                    <label for="displayGradeSelect" class="col-sm-2 col-form-label text-end">Display
+                                        Grade
+                                        as</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="assignmentsSelect" id="displayGradeSelect">
+                                            <option selected>Percentage</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
+                                </div>
 
-                                    <div class="form-check form-group">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Do not count this assignment towards my final grade
-                                        </label>
-                                    </div>
+                                <div class="form-check form-group">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Do not count this assignment towards my final grade
+                                    </label>
+                                </div>
 
-                                    <!-- SUBMISSION TYPE -->
-                                    <div class="form-group row">
-                                        <label for="inputName" class="col-sm-2 col-form-label text-end">Submission
-                                            Type</label>
-                                        <div class="col-sm-10">
-                                            <div class="form-control" id="inputName">
+                                <!-- SUBMISSION TYPE -->
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-sm-2 col-form-label text-end">Submission
+                                        Type</label>
+                                    <div class="col-sm-10">
+                                        <div class="form-control" id="inputName">
 
-                                                <div class="col-sm-10">
-                                                    <select class="form-select" aria-label="Default select example"
-                                                        id="submission-type-select">
-                                                        <option selected>Online</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </div>
-
-                                                <b>Online Entry Options</b>
-
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="defaultCheck1" checked>
-                                                    <label class="form-check-label" for="defaultCheck1">
-                                                        Text Entry
-                                                    </label>
-                                                </div>
-
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="defaultCheck2" checked>
-                                                    <label class="form-check-label" for="defaultCheck2">
-                                                        Website URL
-                                                    </label>
-                                                </div>
-
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="defaultCheck2" checked>
-                                                    <label class="form-check-label" for="defaultCheck2">
-                                                        Media Recordings
-                                                    </label>
-                                                </div>
-
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="defaultCheck2">
-                                                    <label class="form-check-label" for="defaultCheck2">
-                                                        Student Annotation
-                                                    </label>
-                                                </div>
-
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="defaultCheck2">
-                                                    <label class="form-check-label" for="defaultCheck2">
-                                                        File Uploads
-                                                    </label>
-                                                </div>
-
+                                            <div class="col-sm-10">
+                                                <select class="form-select" aria-label="Default select example"
+                                                    id="submission-type-select">
+                                                    <option selected>Online</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
+
+                                            <b>Online Entry Options</b>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1" checked>
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Text Entry
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2" checked>
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Website URL
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2" checked>
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Media Recordings
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Student Annotation
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    File Uploads
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
+                                </div>
 
-                                    <!-- ASSIGN -->
-                                    <div class="form-group row">
-                                        <label for="assign-container" class="col-sm-2 col-form-label text-end">Assign
-                                        </label>
-                                        <div class="col-sm-10">
-                                            <div class="form-control" id="assign-container">
-                                                <div>
-                                                    <label for="formGroupExampleInput"><b>Assign to</b>
-                                                    </label>
-                                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                                        placeholder="Example input">
-                                                </div>
-                                                <div>
-                                                    <label for="formGroupExampleInput2"><b>Due</b></label>
+                                <!-- ASSIGN -->
+                                <div class="form-group row">
+                                    <label for="assign-container" class="col-sm-2 col-form-label text-end">Assign
+                                    </label>
+                                    <div class="col-sm-10">
+                                        <div class="form-control" id="assign-container">
+                                            <div>
+                                                <label for="formGroupExampleInput"><b>Assign to</b>
+                                                </label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                                    placeholder="Example input">
+                                            </div>
+                                            <div>
+                                                <label for="formGroupExampleInput2"><b>Due</b></label>
+                                                <input type="date" class="form-control" id="formGroupExampleInput2">
+                                            </div>
+                                            <div class="container p-0 row">
+
+                                                <div class="col-6">
+                                                    <label for="formGroupExampleInput2"><b>Available
+                                                            from</b></label>
                                                     <input type="date" class="form-control" id="formGroupExampleInput2">
                                                 </div>
-                                                <div class="container p-0 row">
 
-                                                    <div class="col-6">
-                                                        <label for="formGroupExampleInput2"><b>Available
-                                                                from</b></label>
-                                                        <input type="date" class="form-control"
-                                                            id="formGroupExampleInput2">
-                                                    </div>
-
-                                                    <div class="col-6">
-                                                        <label for="formGroupExampleInput2"><b>Until</b></label>
-                                                        <input type="date" class="form-control"
-                                                            id="formGroupExampleInput2">
-                                                    </div>
-
+                                                <div class="col-6">
+                                                    <label for="formGroupExampleInput2"><b>Until</b></label>
+                                                    <input type="date" class="form-control" id="formGroupExampleInput2">
                                                 </div>
 
-
                                             </div>
+
+
                                         </div>
                                     </div>
+                                </div>
 
-                                </form>
+                            </form>
 
 
-                            </div>
                         </div>
-
-
                     </div>
+
+
                 </div>
+
 
 
 
