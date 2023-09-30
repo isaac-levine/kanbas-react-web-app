@@ -19,9 +19,9 @@
 
 <body>
 
-    <div class="container-fluid" id="parent-container">
-        <div class="row d-flex flex-row" id="parent-row">
+    <body>
 
+        <div class="container-fluid row" id="parent-container">
             <!-- ------------- KANBAS NAVIGATION SIDEBAR COLUMN------------- -->
             <div class="d-flex vh-100% justify-content-start col-1 vh-100% text-center container list-group"
                 id="kanbas-navigation-sidebar">
@@ -79,82 +79,89 @@
                     <a class="justify-content-center text-decoration-none row stretched-link" href="#">Help</a>
                 </div>
             </div>
-            <!-- ------------- ACCOUNT NAVIGATION SIDEBAR COLUMN------------- -->
-            <div class="col-1 vh-100% justify-content-start" id="account-navigation-sidebar">
+
+            <div class="col-11 vh-100% container-fluid row">
+                <!-- ------------- ACCOUNT NAVIGATION SIDEBAR COLUMN------------- -->
+                <div class="col-3 vh-100% container-fluid " id="account-navigation-sidebar">
 
 
-                <ul class="list-group-flush" id="account-nav-list">
+                    <ul class="list-group-flush" id="account-nav-list">
 
-                    <li class="list-group-item text-wrap">
-                        <a href="#">Notifications</a>
-                    </li>
-                    <li class="list-group-item active">
-                        <a href="">Profile</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Files</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Settings</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="">ePortfolios</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Shared Content</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">The Hub</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Qwuickly Course Tools</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#">Global Announcements</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- ------------- PROFILE SCREEN COLUMN ------------- -->
-            <div class="col-8 vh-100% container" id="profile-screen">
+                        <li class="list-group-item text-wrap">
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="">ePortfolios</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Shared Content</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">The Hub</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Qwuickly Course Tools</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Global Announcements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ------------- PROFILE SCREEN COLUMN ------------- -->
+                <div class="col-7 vh-100% container-fluid" id="profile-screen">
 
-                <i class="fa fa-user fa-10x" aria-hidden="true" id="user-icon"></i>
-                <h1>Isaac Levine</h1>
+                    <i class="fa fa-user fa-10x" aria-hidden="true" id="user-icon"></i>
+                    <h1>Isaac Levine</h1>
 
-                <h4>Contact</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorem accusantium impedit esse
-                    sapiente, sequi alias natus cumque consectetur eaque. Architecto sapiente suscipit odit molestiae
-                    temporibus ex. Amet, at omnis!</p>
+                    <h4>Contact</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorem accusantium impedit
+                        esse
+                        sapiente, sequi alias natus cumque consectetur eaque. Architecto sapiente suscipit odit
+                        molestiae
+                        temporibus ex. Amet, at omnis!</p>
 
-                <h4>Biography</h4>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aspernatur harum qui repellat
-                    earum similique voluptatibus expedita voluptatem blanditiis? Ipsa veritatis voluptatibus porro,
-                    nulla numquam omnis fugiat itaque delectus pariatur.
-                </p>
+                    <h4>Biography</h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus aspernatur harum qui
+                        repellat
+                        earum similique voluptatibus expedita voluptatem blanditiis? Ipsa veritatis voluptatibus
+                        porro,
+                        nulla numquam omnis fugiat itaque delectus pariatur.
+                    </p>
 
-                <h4>Links</h4>
-                <ul class="list-group-flush">
-                    <li class="list-group-item">
-                        <i class="fa-solid fa-link"></i>
-                        <a
-                            href="https://www.youtube.com/watch?v=BumwDcj5Y8k&feature=youtu.be&ab_channel=WebDevTV">Youtube</a>
-                    </li>
-                </ul>
+                    <h4>Links</h4>
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">
+                            <i class="fa-solid fa-link"></i>
+                            <a
+                                href="https://www.youtube.com/watch?v=BumwDcj5Y8k&amp;feature=youtu.be&amp;ab_channel=WebDevTV">Youtube</a>
+                        </li>
+                    </ul>
 
 
-            </div>
+                </div>
 
-            <!-- EDIT PROFILE COLUMN   -->
-            <div class="col-2 vh-100% container">
+                <!-- EDIT PROFILE COLUMN   -->
+                <div class="col-2 vh-100% container">
 
-                <a class="btn btn-light float-end" href="/Kanbas/Profile/edit.html" role="button">
-                    <i class="fa-solid fa-pencil" id="pencil-icon"></i>
-                    Edit Profile
-                </a>
+                    <a class="btn btn-light float-end" href="/Kanbas/Profile/edit.html" role="button">
+                        <i class="fa-solid fa-pencil" id="pencil-icon"></i>
+                        Edit Profile
+                    </a>
+                </div>
+
             </div>
 
         </div>
-    </div>
 
 
-</body>
+    </body>
