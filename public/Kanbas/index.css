@@ -11,7 +11,13 @@
     padding-left: 0;
 }
 
-#account-navigation-sidebar {}
+#top-left-dropdown-icon {
+    color: white;
+}
+
+/* #kanbas-navigation-dropdown>ul>li {
+    width: 100%;
+} */
 
 #account-navigation-sidebar>ul>li {
     margin-bottom: 15px;
@@ -19,7 +25,10 @@
     width: 190px;
 }
 
-
+#home-top-black-bar {
+    background-color: black;
+    width: 100%;
+}
 
 
 .kanbas-icon {

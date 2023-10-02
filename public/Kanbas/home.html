@@ -87,7 +87,7 @@
             <!-- ------------- REST OF THE SCREEN ------------- -->
             <div class="container row col-11" id="rest-of-screen-container">
                 <!-- ------------- TOP BREADCRUMB ------------- -->
-                <div class="container">
+                <div class="container d-none d-md-none d-lg-block">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                         <ol class="breadcrumb float-start">
                             <li class="breadcrumb-item"><a href="/Kanbas/home.html">CS1223.1213.1231</a></li>
@@ -97,6 +97,91 @@
                     <button class="btn btn-light float-end"><i class="fa-solid fa-glasses"></i> Student
                         View</button>
                 </div>
+
+                <!-- ------------- BLACK TOP BAR (only visible on small screens) ------------- -->
+                <div class="d-block d-lg-none container d-block d-lg-none" id="home-top-black-bar">
+
+                    <!-- kanbas navigation dropdown -->
+                    <div class="dropdown float-start" id="kanbas-navigation-dropdown">
+                        <i class="fa-solid fa-bars dropdown-toggle fa-lg" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="top-left-dropdown-icon"></i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="/Kanbas/home.html">Home</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/account.html">Account</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/dashboard.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="/Kanbas/dashboard.html">Courses</a></li>
+                            <li><a class="dropdown-item" href="">Calendar</a></li>
+                            <li><a class="dropdown-item" href="">Calendar</a></li>
+                            <li><a class="dropdown-item" href="">Inbox</a></li>
+                            <li><a class="dropdown-item" href="">History</a></li>
+                            <li><a class="dropdown-item" href="">Studio</a></li>
+                            <li><a class="dropdown-item" href="">Commons</a></li>
+                            <li><a class="dropdown-item" href="">Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown float-end">
+                        <i class="fa-solid fa-chevron-down" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="top-left-dropdown-icon"></i>
+                        <ul class="dropdown-menu">
+                            <li class="list-group-item active dropdown-item">
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Modules</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Piazza</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Zoom Meetings</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="/Kanbas/Assignments/index.html">Assignments</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Quizzes</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="/Kanbas/grades.html">Grades</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">People</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Panopto Video</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Discussions</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Announcements</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Pages</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Files</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Rubrics</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Outcomes</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Collaborations</a>
+                            </li>
+                            <li class="list-group-item dropdown-item">
+                                <a href="#">Syllabus</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
 
                 <hr />
 
@@ -329,3 +414,8 @@
 </body>
 
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
