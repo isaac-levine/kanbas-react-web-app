@@ -6,6 +6,8 @@ import db from "../../Database";
 function Assignments() {
     const { courseId } = useParams();
     const assignments = db.assignments;
+    // Only take the assignments whos 'course' matches our courseId from useParams()
+    // test
     const courseAssignments = assignments.filter(
         (assignment) => assignment.course === courseId);
     return (
