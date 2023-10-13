@@ -5,17 +5,28 @@
         "description": "Lorem"
     },
     {
-        "_id": "RS102",
-        "name": "Aerodynamics",
-        "number": "RS4560",
-        "startDate": "2023-01-10",
-        "endDate": "2023-05-15"
+        "course": "RS101",
+        "name": "Rocket Propulsion Module 2",
+        "description": "Lorem ipsum blah blah blah"
     },
     {
-        "_id": "RS103",
-        "name": "Spacecraft Design",
-        "number": "RS4570",
-        "startDate": "2023-01-10",
-        "endDate": "2023-05-15"
+        "course": "RS102",
+        "name": "Aeorodynamics Module 1",
+        "description": "Lorem"
+    },
+    {
+        "course": "RS102",
+        "name": "Aeorodynamics Module 2",
+        "description": "Lorem ipsum blah blah blah"
+    },
+    {
+        "course": "RS103",
+        "name": "Spacecraft Design Module 1",
+        "description": "Lorem"
+    },
+    {
+        "course": "RS103",
+        "name": "Spacecraft Design Module 2",
+        "description": "Lorem ipsum blah blah blah"
     }
 ]
