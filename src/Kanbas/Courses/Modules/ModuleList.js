@@ -4,8 +4,6 @@ import db from "../../Database";
 import "./index.css";
 
 
-
-
 function ModuleList() {
     const { courseId } = useParams();
     const modules = db.modules;

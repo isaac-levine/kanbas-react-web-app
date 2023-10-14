@@ -1,0 +1,15 @@
+.card-header>button {
+    text-decoration: none;
+    color: black;
+}
+
+#assignments-list>.list-group-item {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card {}
