@@ -5,7 +5,7 @@ function Dashboard() {
     return (
         <div>
             <h1>Dashboard</h1>
-            <div className="list-group">
+            <div className="list-group-flush">
                 {courses.map((course) => (
                     <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
                         {course.name}

@@ -1,0 +1,30 @@
+#kanbas-navigation-sidebar {
+    background-color: black !important;
+    height: 100vh;
+}
+
+#kanbas-navigation-sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: red !important;
+    border-color: lightgrey !important;
+}
+
+.kanbas-icon {
+    font-size: 30px;
+    /* Adjust the size as needed */
+    margin-bottom: 5px;
+    /* Adjust the margin as needed */
+    color: lightgray;
+}
+
+#kanbas-navigation-sidebar>.list-group-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

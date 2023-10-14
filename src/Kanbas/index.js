@@ -4,9 +4,12 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import Home from "./Home";
+import './KanbasNavigation/index.css';
 
 function Kanbas() {
     return (
+        // Renders the navigation, and then whatever content is necessary for whatever page we are on
+        // by default, we start at the Dashboard  
         <div className="d-flex">
             <KanbasNavigation />
             <div>
