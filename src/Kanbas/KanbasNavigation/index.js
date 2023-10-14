@@ -41,43 +41,23 @@ function KanbasNavigation() {
         }
     ];
     const { pathname } = useLocation();
-    // return (
-    //     <div id="kanbas-navigation-sidebar" className="list-group-flush" style={{ width: 150 }}>
-    //         {navItems.map((navItem, index) => (
-    //             <div key={index} className="text-center">
-    //                 <div className={`list-group-item ${pathname.includes(navItem.link) && "active"} mb-2 align-items-center`}>
-
-
-    //                     <i className={`kanbas-icon fa-solid ${navItem.icon} fa-5x`} id="account-icon"></i>
-
-    //                     <Link
-    //                         to={`/Kanbas/${navItem.link}`}
-
-    //                     >
-    //                         {navItem.link}
-    //                     </Link>
-
-
-    //                 </div>
-    //             </div>
-    //         ))
-    //         }
-    //     </div >
-    // );
     return (
         <div id="kanbas-navigation-sidebar" className="list-group-flush" style={{ width: 150 }}>
-            {navItems.map((navItem, index) => (
-                <div key={index} className={`list-group-item ${pathname.includes(navItem.link) && "active"}`}>
-
-                    <Link to={`/Kanbas/${navItem.link}`} className="d-block text-center"> {/* Center align the link */}
-                        <div className="text-center"> {/* Center align and add margin below */}
-                            <i className={`kanbas-icon fa-solid ${navItem.icon}`} id="account-icon"></i>
-                        </div>
-                        {navItem.link}
-                    </Link>
-                </div>
-            ))}
+            {navItems.map((navItem, index) => {
+                console.log(navItem.link); // Add this line to check the value of navItem.link
+                return (
+                    <div key={index} id={navItem.link === "Account" ? "account-nav" : ""} className={`list-group-item ${pathname.includes(navItem.link) && "active"}`}>
+                        <Link to={`/Kanbas/${navItem.link}`} className="d-block text-center"> {/* Center align the link */}
+                            <div className="text-center"> {/* Center align and add margin below */}
+                                <i className={`kanbas-icon fa-solid ${navItem.icon}`} id="account-icon"></i>
+                            </div>
+                            {navItem.link}
+                        </Link>
+                    </div>
+                );
+            })}
         </div>
+
     );
 
 

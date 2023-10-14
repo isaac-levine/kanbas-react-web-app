@@ -11,9 +11,13 @@
 
 .list-group-item.active {
     z-index: 2;
-    color: #fff;
-    background-color: red !important;
+    color: red;
+    background-color: white !important;
     border-color: lightgrey !important;
+}
+
+.active * {
+    color: red !important;
 }
 
 .kanbas-icon {
@@ -21,10 +25,14 @@
     /* Adjust the size as needed */
     margin-bottom: 5px;
     /* Adjust the margin as needed */
-    color: lightgray;
+    color: red;
 }
 
 #kanbas-navigation-sidebar>.list-group-item {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#account-nav i {
+    color: lightgray;
 }
