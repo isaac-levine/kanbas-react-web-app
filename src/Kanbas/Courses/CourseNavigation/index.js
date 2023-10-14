@@ -1,4 +1,5 @@
 import { Link, useParams, useLocation } from "react-router-dom";
+import "./index.css";
 
 
 function CourseNavigation() {
@@ -6,7 +7,7 @@ function CourseNavigation() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     return (
-        <div className="list-group-flush" style={{ width: 150 }}>
+        <div id="account-nav-list" className="list-group-flush" style={{ width: 150 }}>
             {links.map((link, index) => (
                 <Link
                     key={index}

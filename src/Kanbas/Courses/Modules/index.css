@@ -1,0 +1,20 @@
+.top-right-button {
+    margin-left: 5px;
+}
+
+#buttons-container>a {
+    margin-left: 5px;
+}
+
+
+
+#module-list>.card {
+    /* background-color: lightcoral; */
+    /* margin-bottom: 50px;
+    border-radius: 2; */
+}
+
+.card-header>button {
+    text-decoration: none;
+    color: black;
+}

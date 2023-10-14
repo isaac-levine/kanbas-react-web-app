@@ -1,0 +1,15 @@
+#status-col * {
+    /* margin-bottom: 10px; */
+}
+
+#status-col .btn {
+    /* border: .5px solid #000; */
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+#status-col>div>div {
+    margin-top: 40px;
+}

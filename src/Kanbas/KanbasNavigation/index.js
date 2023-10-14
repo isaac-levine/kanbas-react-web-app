@@ -42,7 +42,7 @@ function KanbasNavigation() {
     ];
     const { pathname } = useLocation();
     return (
-        <div id="kanbas-navigation-sidebar" className="list-group-flush" style={{ width: 150 }}>
+        <div id="kanbas-navigation-sidebar" className="list-group-flush">
             {navItems.map((navItem, index) => {
                 console.log(navItem.link); // Add this line to check the value of navItem.link
                 return (
