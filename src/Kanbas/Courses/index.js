@@ -19,6 +19,8 @@ function Courses() {
         pageTitle = "Modules";
     } else if (pathname.includes("Assignments")) {
         pageTitle = "Assignments";
+    } else if (pathname.includes("Grades")) {
+        pageTitle = "Grades";
     }
 
     return (
