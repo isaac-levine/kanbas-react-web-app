@@ -1,0 +1,30 @@
+#top-left-stuff {
+    display: flex;
+    /* Use flexbox */
+    flex-direction: row;
+    /* Arrange items in a row */
+    align-items: center;
+}
+
+#breadcrumb {
+    margin: 0;
+    display: 'flex';
+    align-items: 'center';
+}
+
+.fa-bars {
+    margin-right: 10px;
+    color: red;
+    size: 10rem;
+    cursor: pointer;
+}
+
+#breadcrumb>* {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#top-left-stuff {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

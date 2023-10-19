@@ -5,6 +5,9 @@ import Modules from "./Modules";
 import Home from "../Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
+import "./index.css"
+import bootstrap from "bootstrap";
+import React, { useState } from 'react';
 
 function Courses() {
     const { courseId } = useParams();
@@ -12,6 +15,8 @@ function Courses() {
     const course = db.courses.find((course) => course._id === courseId);
 
     let pageTitle = "Dashboard"; // Default title
+
+    const [showCourseNavigation, setShowCourseNavigation] = useState(true);
 
     if (pathname.includes("Home")) {
         pageTitle = "Home";
@@ -23,24 +28,30 @@ function Courses() {
         pageTitle = "Grades";
     }
 
+
+
     return (
         <div>
+            <div id="top-left-stuff">
+                <i onClick={() => setShowCourseNavigation(!showCourseNavigation)} className="fa-1x d-sm-block d-xs-block d-md-none fa-solid fa-bars"></i>
+                <p id="breadcrumb">
+                    {courseId}
+                    <i class="fa-solid fa-angle-right"></i>
+                    {pageTitle}
+                </p>
+            </div>
 
-            <p>{courseId} <i class="fa-solid fa-angle-right"></i> {pageTitle} </p>
 
 
-            <CourseNavigation />
+            {showCourseNavigation && <CourseNavigation className="d-none d-sm-block" />}
 
-            <div
 
-                className="overflow-y-scroll position-fixed bottom-0 end-0"
+            <div className="overflow-y-scroll position-fixed bottom-0 end-0"
                 style={{
                     left: "320px",
                     top: "50px",
                 }}
             >
-
-
                 <Routes>
                     <Route path="/" element={<Navigate to="Home" />} />
                     <Route path="Home" element={<Home />} />
@@ -52,9 +63,7 @@ function Courses() {
                     />
                     <Route path="Grades" element={<h1>Grades</h1>} />
                 </Routes>
-
             </div>
-
         </div>
     );
 }
