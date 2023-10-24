@@ -15,6 +15,6 @@ function Assignment3() {
       <PathParameters />
       <JavaScript />
     </div>
-  )
+  );
 }
 export default Assignment3;
