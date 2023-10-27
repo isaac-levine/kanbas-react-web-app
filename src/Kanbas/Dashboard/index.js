@@ -31,36 +31,38 @@ function Dashboard() {
   };
   return (
     <div>
-      <h1>Dashboard</h1>
-      <h5>Course</h5>
-      <input
-        onChange={(e) => setCourse({ ...course, name: e.target.value })}
-        value={course.name}
-        className="form-control"
-      />
-      <input
-        onChange={(e) => setCourse({ ...course, number: e.target.value })}
-        value={course.number}
-        className="form-control"
-      />
-      <input
-        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
-        value={course.startDate}
-        className="form-control"
-        type="date"
-      />
-      <input
-        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
-        value={course.endDate}
-        className="form-control"
-        type="date"
-      />
-      <button className="btn btn-primary" onClick={addNewCourse}>
-        Add
-      </button>
-      <button className="btn btn-success" onClick={updateCourse}>
-        Update
-      </button>
+      <div>
+        <h1>Dashboard</h1>
+        <h5>Course</h5>
+        <input
+          onChange={(e) => setCourse({ ...course, name: e.target.value })}
+          value={course.name}
+          className="form-control"
+        />
+        <input
+          onChange={(e) => setCourse({ ...course, number: e.target.value })}
+          value={course.number}
+          className="form-control"
+        />
+        <input
+          onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+          value={course.startDate}
+          className="form-control"
+          type="date"
+        />
+        <input
+          onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+          value={course.endDate}
+          className="form-control"
+          type="date"
+        />
+        <button className="btn btn-primary" onClick={addNewCourse}>
+          Add
+        </button>
+        <button className="btn btn-success" onClick={updateCourse}>
+          Update
+        </button>
+      </div>
 
       <div className="card-group">
         {courses.map((course) => (

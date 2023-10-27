@@ -16,3 +16,13 @@
   text-decoration: none;
   color: black;
 }
+
+#module-list-item {
+  background-color: lightgray;
+  border: 1px solid black;
+  margin-top: 1px;
+}
+
+.float-end > .btn {
+  margin-left: 4px;
+}
