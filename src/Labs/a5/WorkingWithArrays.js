@@ -7,7 +7,7 @@ function WorkingWithArrays() {
     id: 123,
   });
 
-  const API = "http://localhost:4000/a5/todos";
+  const API = "https://kanbas-node-server-app-az4u.onrender.com/a5/todos";
 
   const removeTodo = async (todo) => {
     const response = await axios.get(`${API}/${todo.id}/delete`);
@@ -21,7 +21,7 @@ function WorkingWithArrays() {
 
   const createTodo = async () => {
     // const response = await axios.get("http://localhost:4000/a5/todos/create");
-    const response = await axios.post("http://localhost:4000/a5/todos", todo);
+    const response = await axios.post(`${API}`, todo);
     setTodos([...todos, response.data]);
   };
 

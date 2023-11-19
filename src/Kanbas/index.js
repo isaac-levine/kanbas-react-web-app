@@ -21,7 +21,8 @@ function Kanbas() {
   });
   const [courses, setCourses] = useState([]);
 
-  const URL = "http://localhost:4000/api/courses";
+  // const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-az4u.onrender.com/api/courses";
 
   const addNewCourse = async () => {
     try {
