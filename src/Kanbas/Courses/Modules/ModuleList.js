@@ -123,29 +123,30 @@ function ModuleList() {
             }
           />
         </li>
-        {modules
-          .filter((module) => module.course === courseId)
-          .map((module, index) => (
-            <li key={index} className="list-group-item" id="module-list-item">
-              <div className="float-end">
-                <button
-                  className="btn btn-light"
-                  onClick={() => dispatch(setModule(module))}
-                >
-                  Edit
-                </button>
-                <button
-                  className="btn btn-danger"
-                  // onClick={() => dispatch(deleteModule(module._id))}
-                  onClick={() => handleDeleteModule(module._id)}
-                >
-                  Delete
-                </button>
-              </div>
-              <h3>{module.name}</h3>
-              <p>{module.description}</p>
-            </li>
-          ))}
+        {modules &&
+          modules
+            .filter((module) => module.course === courseId)
+            .map((module, index) => (
+              <li key={index} className="list-group-item" id="module-list-item">
+                <div className="float-end">
+                  <button
+                    className="btn btn-light"
+                    onClick={() => dispatch(setModule(module))}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    className="btn btn-danger"
+                    // onClick={() => dispatch(deleteModule(module._id))}
+                    onClick={() => handleDeleteModule(module._id)}
+                  >
+                    Delete
+                  </button>
+                </div>
+                <h3>{module.name}</h3>
+                <p>{module.description}</p>
+              </li>
+            ))}
       </ul>
     </div>
   );
