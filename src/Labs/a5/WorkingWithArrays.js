@@ -100,24 +100,6 @@ function WorkingWithArrays() {
           Get Todo by ID
         </a>
         <h4>Creating new Items in an Array</h4>
-        <button className="btn btn-primary" onClick={createTodo}>
-          Create Todo
-        </button>
-
-        <ul className="list-group">
-          {todos.map((todo) => (
-            <li className="list-group-item" key={todo.id}>
-              <button
-                className="btn btn-danger float-end"
-                onClick={() => deleteTodo(todo.id)}
-              >
-                Delete
-              </button>
-              {todo.title}
-            </li>
-          ))}
-        </ul>
-        <pre>{JSON.stringify(todos, null, 2)}</pre>
       </h2>
       <button onClick={createTodo} className="btn btn-primary mb-2 w-100">
         Create Todo
@@ -176,6 +158,7 @@ function WorkingWithArrays() {
           </li>
         ))}
       </ul>
+      <pre>{JSON.stringify(todos, null, 2)}</pre>
     </div>
   );
 }
