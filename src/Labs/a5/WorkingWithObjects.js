@@ -12,7 +12,7 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const URL = `${lab5URL}/assignment}`;
+  const URL = `${lab5URL}/assignment`;
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
