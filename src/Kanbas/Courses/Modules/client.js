@@ -1,5 +1,6 @@
 import axios from "axios";
 const COURSES_URL = "http://localhost:4000/api/courses";
+const MODULES_URL = "http://localhost:4000/api/modules";
 
 // get all the modules for this course
 export const findModulesForCourse = async (courseId) => {
@@ -16,7 +17,6 @@ export const createModule = async (courseId, module) => {
   return response.data;
 };
 
-const MODULES_URL = "http://localhost:4000/api/modules";
 export const deleteModule = async (moduleId) => {
   const response = await axios.delete(`${MODULES_URL}/${moduleId}`);
   return response.data;
