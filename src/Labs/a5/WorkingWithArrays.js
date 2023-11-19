@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
   const [todo, setTodo] = useState({
-    title: "New Todo",
+    title: "NewTodo",
     completed: false,
     id: 123,
   });
