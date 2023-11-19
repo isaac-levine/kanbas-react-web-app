@@ -22,6 +22,7 @@ function ModuleList() {
     findModulesForCourse(courseId).then((modules) =>
       dispatch(setModules(modules))
     );
+    console.log(modules);
   }, [courseId]);
 
   const handleAddModule = () => {
