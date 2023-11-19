@@ -13,14 +13,29 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import "./index.css";
 import bootstrap from "bootstrap";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { ConstructionOutlined } from "@mui/icons-material";
 
-function Courses({ courses }) {
+function Courses() {
   //   const { courseId } = useParams();
+  const URL = "http://localhost:4000/api/courses";
   const { pathname } = useLocation();
   //   const course = db.courses.find((course) => course._id === courseId);
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  // const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+
+  // find course by id upon initial render
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+  console.log(courseId);
 
   let pageTitle = "Dashboard"; // Default title
 
