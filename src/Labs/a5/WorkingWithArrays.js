@@ -14,6 +14,12 @@ function WorkingWithArrays() {
     setTodos(response.data);
   };
 
+  const updateTodo = async () => {
+    const response = await axios.put(`${API}/${todo.id}`, todo);
+    setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
+    setTodo({});
+  };
+
   const updateTitle = async () => {
     const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
     setTodos(response.data);
@@ -112,6 +118,11 @@ function WorkingWithArrays() {
         value={todo.description}
         type="text"
       />
+      <textarea
+        onChange={(e) => setTodo({ ...todo, description: e.target.value })}
+        value={todo.description}
+        type="text"
+      />
       <input
         onChange={(e) =>
           setTodo({
@@ -136,6 +147,31 @@ function WorkingWithArrays() {
         Completed
       </label>
       <button onClick={postTodo}>Post Todo</button>
+      <input
+        onChange={(e) =>
+          setTodo({
+            ...todo,
+            due: e.target.value,
+          })
+        }
+        value={todo.due}
+        type="date"
+      />
+      <label>
+        <input
+          onChange={(e) =>
+            setTodo({
+              ...todo,
+              completed: e.target.checked,
+            })
+          }
+          value={todo.completed}
+          type="checkbox"
+        />
+        Completed
+      </label>
+      <button onClick={postTodo}>Post Todo</button>
+      <button onClick={updateTodo}>Update Todo</button>
       <ul className="list-group">
         {todos.map((todo) => (
           <li key={todo.id} className="list-group-item">
