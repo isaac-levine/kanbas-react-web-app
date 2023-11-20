@@ -5,12 +5,11 @@ import React, { useState, useEffect } from "react";
 import { findAssignmentsForCourse } from "./client";
 
 function Assignments() {
-  // courseAssignments is the list of assignments for this course
+  const { courseId } = useParams();
+  const [assignments, setAssignments] = useState([]);
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
-  const { courseId } = useParams();
-  const [assignments, setAssignments] = useState([]);
 
   useEffect(() => {
     const fetchAssignments = async () => {
