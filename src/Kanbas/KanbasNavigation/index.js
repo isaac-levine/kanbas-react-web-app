@@ -44,7 +44,7 @@ function KanbasNavigation() {
   return (
     <div id="kanbas-navigation-sidebar" className="list-group-flush">
       {navItems.map((navItem, index) => {
-        console.log(navItem.link);
+        // console.log(navItem.link);
         return (
           <div
             key={index}
