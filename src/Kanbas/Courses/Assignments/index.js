@@ -2,7 +2,12 @@ import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
 import React, { useState, useEffect } from "react";
-import { findAssignmentsForCourse } from "./client";
+import {
+  findAssignmentsForCourse,
+  deleteAssignment,
+  updateAssignment,
+  createAssignment,
+} from "./client";
 
 function Assignments() {
   const { courseId } = useParams();
@@ -28,13 +33,19 @@ function Assignments() {
         <div className="card-body">
           <div id="assignments-list" className="list-group-flush">
             {courseAssignments.map((assignment) => (
-              <Link
-                key={assignment._id}
-                to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                className="list-group-item"
-              >
-                {assignment.title}
-              </Link>
+              <div key={assignment._id} className="list-group-item">
+                <button onClick={() => updateAssignment(assignment)}>
+                  Edit
+                </button>
+                <button onClick={() => deleteAssignment(assignment._id)}>
+                  Delete
+                </button>
+                <Link
+                  to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                >
+                  {assignment.title}
+                </Link>
+              </div>
             ))}
           </div>
         </div>
