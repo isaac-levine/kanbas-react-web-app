@@ -24,6 +24,7 @@ function UserTable() {
   };
 
   const createUser = async () => {
+    console.log("Creating new user: ", user);
     try {
       const newUser = await client.createUser(user);
       setUsers([newUser, ...users]);
@@ -31,6 +32,7 @@ function UserTable() {
       console.log(err);
     }
   };
+
   const fetchUsers = async () => {
     const users = await client.findAllUsers();
     setUsers(users);
