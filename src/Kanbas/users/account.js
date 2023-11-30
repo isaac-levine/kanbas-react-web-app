@@ -68,11 +68,11 @@ function Account() {
             onChange={(e) => setAccount({ ...account, email: e.target.value })}
           />
           <select
+            value={account.role}
             onChange={(e) =>
               setAccount({
                 ...account,
                 role: e.target.value,
-                value: account.role,
               })
             }
           >
