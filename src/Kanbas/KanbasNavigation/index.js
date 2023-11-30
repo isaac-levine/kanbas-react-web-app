@@ -4,6 +4,10 @@ import "./index.css";
 function KanbasNavigation() {
   const navItems = [
     {
+      link: "signin",
+      icon: "fa-sign-in",
+    },
+    {
       link: "Account",
       icon: "fa-user",
     },

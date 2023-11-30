@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useParams } from "react-router";
-const API_BASE = "https://kanbas-node-server-app-az4u.onrender.com/api";
+// const API_BASE = "https://kanbas-node-server-app-az4u.onrender.com/api";
+const API_BASE = "localhost:4000/api";
 const COURSES_URL = `${API_BASE}/courses`;
 
 // get all the assignments for this course

@@ -19,8 +19,8 @@ import { ConstructionOutlined } from "@mui/icons-material";
 
 function Courses() {
   //   const { courseId } = useParams();
-  // const URL = "http://localhost:4000/api/courses";
-  const URL = "https://kanbas-node-server-app-az4u.onrender.com/api/courses";
+  const URL = "http://localhost:4000/api/courses";
+  // const URL = "https://kanbas-node-server-app-az4u.onrender.com/api/courses";
   const { pathname } = useLocation();
   //   const course = db.courses.find((course) => course._id === courseId);
   const { courseId } = useParams();
