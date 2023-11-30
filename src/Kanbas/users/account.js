@@ -68,7 +68,13 @@ function Account() {
             onChange={(e) => setAccount({ ...account, email: e.target.value })}
           />
           <select
-            onChange={(e) => setAccount({ ...account, role: e.target.value })}
+            onChange={(e) =>
+              setAccount({
+                ...account,
+                role: e.target.value,
+                value: account.role,
+              })
+            }
           >
             <option value="USER">User</option>
             <option value="ADMIN">Admin</option>
