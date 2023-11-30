@@ -67,13 +67,17 @@ function UserTable() {
           </tr>
           <tr>
             <td>
+              <label for="username-input">Username</label>
               <input
-                value={user.password}
-                onChange={(e) => setUser({ ...user, password: e.target.value })}
-              />
-              <input
+                id="username-input"
                 value={user.username}
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
+              />
+              <label for="password-input">Password</label>
+              <input
+                id="password-input"
+                value={user.password}
+                onChange={(e) => setUser({ ...user, password: e.target.value })}
               />
             </td>
             <td>
