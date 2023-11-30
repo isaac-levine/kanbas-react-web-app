@@ -17,7 +17,7 @@ function KanbasNavigation() {
     },
     {
       link: "Dashboard",
-      icon: "fa-gauge",
+      icon: "fa-gauge", //test
     },
     {
       link: "Courses",
