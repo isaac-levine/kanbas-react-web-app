@@ -5,7 +5,8 @@ import axios from "axios";
 //   "https://kanbas-node-server-app-az4u.onrender.com/api/modules";
 // const API_BASE = process.env.REACT_APP_API_BASE;
 // const API_BASE = "https://kanbas-node-server-app-az4u.onrender.com/api";
-const API_BASE = "localhost:4000/api";
+// const API_BASE = "localhost:4000/api";
+const API_BASE = "https://a6-kanbas-node-server-app-cj4e.onrender.com/api/";
 const MODULES_URL = `${API_BASE}/modules`;
 const COURSES_URL = `${API_BASE}/courses`;
 

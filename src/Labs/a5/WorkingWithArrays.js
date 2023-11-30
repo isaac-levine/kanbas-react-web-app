@@ -8,7 +8,8 @@ function WorkingWithArrays() {
   });
 
   // const API = "https://kanbas-node-server-app-az4u.onrender.com/a5/todos";
-  const API = "http://localhost:4000/a5/todos";
+  // const API = "http://localhost:4000/a5/todos";
+  const API = "https://a6-kanbas-node-server-app-cj4e.onrender.com/a5/todos";
 
   const removeTodo = async (todo) => {
     const response = await axios.get(`${API}/${todo.id}/delete`);
