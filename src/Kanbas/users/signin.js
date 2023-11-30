@@ -1,6 +1,7 @@
 import * as client from "./client";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 function Signin() {
   const [credentials, setCredentials] = useState({
     username: "",
@@ -8,6 +9,7 @@ function Signin() {
   });
   const navigate = useNavigate();
   const signin = async () => {
+    console.log("credentials:" + credentials);
     await client.signin(credentials);
     navigate("/Kanbas/Account");
   };

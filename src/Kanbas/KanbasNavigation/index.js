@@ -8,6 +8,10 @@ function KanbasNavigation() {
       icon: "fa-sign-in",
     },
     {
+      link: "signup",
+      icon: "fa-user-plus",
+    },
+    {
       link: "Account",
       icon: "fa-user",
     },
